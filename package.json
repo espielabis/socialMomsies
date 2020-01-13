@@ -14,7 +14,7 @@
   "author": "Esperanza, Omar, Fitsum, Stuart",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.18.1",
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "connect-mongo": "^2.0.1",
