@@ -3,6 +3,8 @@ import GoogleMapReact from "google-map-react";
 //import Marker from '../Marker/Marker.js'
 import "./map.css";
 
+const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
 const myStyle = {
   // initially any map object has left top corner at lat lng coordinates
   // it’s on you to set object origin to 0,0 coordinates
@@ -43,7 +45,7 @@ class Map extends React.Component {
         <div className="google-map" style={{ width: "250px", height: "250px" }}>
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: "AIzaSyCN47xBr_CNXWg0x_8AYFBfIocWYtErHfA"
+              key: API_KEY
             }}
             defaultCenter={{
               lat: this.props.businesses.latitude,
