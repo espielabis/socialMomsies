@@ -10,7 +10,6 @@ const myStyle = {
   height: 20,
   left: -10,
   top: -10,
-
   border: "5px solid #f44336",
   borderRadius: 20,
   backgroundColor: "white",
