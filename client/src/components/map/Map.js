@@ -1,13 +1,10 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
-//import Marker from '../Marker/Marker.js'
 import "./map.css";
 
 const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
 const myStyle = {
-  // initially any map object has left top corner at lat lng coordinates
-  // it’s on you to set object origin to 0,0 coordinates
   position: "absolute",
   width: 20,
   height: 20,
@@ -25,7 +22,6 @@ const myStyle = {
 };
 
 const AnyReactComponent = ({ text }) => <div style={myStyle}>{text}</div>;
-// console.log(this.props)
 
 class Map extends React.Component {
   static defaultProps = {
