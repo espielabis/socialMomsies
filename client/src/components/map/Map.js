@@ -2,8 +2,8 @@ import React from "react";
 import GoogleMapReact from "google-map-react";
 import "./map.css";
 
-const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
-console.log(API_KEY);
+const REACT_APP_GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+
 const myStyle = {
   position: "absolute",
   width: 20,
@@ -40,7 +40,7 @@ class Map extends React.Component {
         <div className="google-map" style={{ width: "250px", height: "250px" }}>
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: API_KEY
+              key: REACT_APP_GOOGLE_API_KEY
             }}
             defaultCenter={{
               lat: this.props.businesses.latitude,
