@@ -3,7 +3,7 @@ import GoogleMapReact from "google-map-react";
 import "./map.css";
 
 const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
-
+console.log(API_KEY);
 const myStyle = {
   position: "absolute",
   width: 20,
